@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+  </head>
+  <body>
+    <nav>
+      <button><a href="./index.html">Home</a></button>
+
+      <button><a href="./gpa-calculator.html">GPA Calculator</a></button>
+    </nav>
+
+    <div id="calculation-area">
+      <label for="current-cgpa">Input your current CGPA:</label>
+      <input
+        type="text"
+        name="student-current-cgpa"
+        id="current-cgpa"
+        inputmode="numeric"
+        placeholder="e.g: 4.98"
+      />
+      <br />
+
+      <label for="total-credit-units">Input TCU: </label>
+      <input
+        type="text"
+        name="total-credit-units"
+        id="total-credit-units"
+        inputmode="numeric"
+        placeholder="e.g: 120"
+      />
+      <br />
+     
+      <label for="current-gpa">Input your current GPA:</label>
+      <input
+        type="text"
+        name="current-gpa"
+        id="current-gpa"
+        inputmode="numeric"
+        placeholder="e.g: 4.98"
+      />
+      <br />
+
+      <label for="semester-credit-units">Input CU: </label>
+      <input
+        type="text"
+        name="semester-credit-units"
+        id="semester-credit-units"
+        inputmode="numeric"
+        placeholder="e.g: 14"
+      />
+      <br>
+
+      <p id="result"></p>
+      <br />
+
+      <button type="submit" id="calculate-cgpa-button">Calculate CGPA</button>
+    </div>
+
+    <div id="abbreviations-and-meaning">
+      <p>
+        *GPA: Grade Point Average - Average grade points earned in a single
+        semester
+      </p>
+
+      <p>
+        *CGPA: Cummulative Grade Point Average - Overall average of grade points
+        earned across all semesters
+      </p>
+
+      <p>*CU: Credit Units - Number of units taken for the current semester</p>
+
+      <p>
+        *TCU: Total Credit Units - Total number of units taken since first year
+        in school excluding current semester
+      </p>
+    </div>
+
+    <script src="./script/cgpaCalc.js"></script>
+  </body>
+</html>

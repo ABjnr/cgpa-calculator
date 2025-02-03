@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA Calculator</title>
+  </head>
+
+  <nav>
+    <button><a href="./index.html">Home</a></button>
+
+    <button><a href="./cgpa-calculator.html">CGPA Calculator</a></button>
+  </nav>
+
+  <body>
+    <div id="calculation-area">
+      <label for="scores-sum"
+        >Input your total scores for all courses offered:</label
+      >
+      <input
+        type="text"
+        name="scores-sum"
+        id="scores-sum"
+        inputmode="numeric"
+        placeholder="courses except zero units"
+      />
+      <br />
+
+      <label for="total-units"
+        >Input total units offered for current semester:</label
+      >
+      <input
+        type="text"
+        name="total-units"
+        id="total-units"
+        inputmode="numeric"
+        placeholder="e.g: 16"
+      />
+      <br />
+
+      <p id="result"></p> <br>
+
+      <button type="submit" id="calculate-gpa-button">Calculate GPA</button>
+    </div>
+
+    <div id="abbreviations-and-meaning">
+      <p>
+        *GPA: Grade Point Average - Average grade points earned in a single
+        semester
+      </p>
+      <p>
+        *CGPA: Cummulative Grade Point Average - Overall average of grade points
+        earned across all semesters
+      </p>
+
+      <p>*CU: Credit Units - Number of units taken for the current semester</p>
+
+      <p>
+        *TCU: Total Credit Units - Total number of units taken since first year
+        in school excluding current semester
+      </p>
+    </div>
+
+    <script src="./script/gpaCalc.js"></script>
+  </body>
+</html>

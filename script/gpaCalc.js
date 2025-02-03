@@ -20,13 +20,6 @@ gpaCalcButton.addEventListener("click", () => {
     } else if (isNaN(parsedUnits)) {
       result.innerHTML = "Invalid units input";
     } else {
-      /* 
-      
-      do your calculations well
-      
-      
-      */
-
       let answer = (parsedScores / parsedUnits).toFixed(2);
 
       result.innerHTML = `Your GPA is: ${answer}`;
